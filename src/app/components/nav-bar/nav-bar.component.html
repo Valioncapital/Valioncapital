@@ -1,0 +1,57 @@
+ <!-- Navigation-->
+
+ <nav class="navbar navbar-expand-lg  text-uppercase fixed-top p-0" id="mainNav">
+ <div class="row w-100 m-0">
+     <div class="col-12 nav-logo">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/logo.svg" alt="Valion">  </a>
+     </div>
+     <div class="col-12 menu">
+        <div class="container">
+ 
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <i class="fas fa-bars"></i>
+            </button>
+         
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['/']"  class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Inicio </a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['#']" routerLinkActive="router-link-active" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Quiénes somos </a>
+                        <ul class="submenu">
+                            <li><a [routerLink]="['quienes']" class="nav-link">- Historia</a></li>
+                            <li><a [routerLink]="['bases']" class="nav-link">- Identidad Corporativa</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['servicios']" routerLinkActive="router-link-active" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Servicios </a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['estrategias']" routerLinkActive="router-link-active" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Estrategias </a>
+                    </li>
+                    
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Blog</a>
+                    </li>
+<!-- 
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['blog']" routerLinkActive="router-link-active" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Blog</a>
+                    </li> -->
+                    
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['contacto']" routerLinkActive="router-link-active" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"><i class="fas fa-circle"></i> Contacto </a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a type="button" routerLinkActive="router-link-active" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger link-login" data-toggle="modal" data-target="#LoginModal"><img src="assets/icon_login.svg"> Login </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </div>
+ </div>
+ 
+</nav>
+<modal-login></modal-login>
+<router-outlet></router-outlet>

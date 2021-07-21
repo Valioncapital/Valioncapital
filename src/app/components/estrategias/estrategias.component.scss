@@ -1,0 +1,50 @@
+.estrategia{
+    background-image: url(/assets/bg_estrategia@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    .info-beta{
+        display: flex;
+        flex-direction: column;
+       padding: 2rem;
+        margin: auto;
+        p{
+            color: #2C2C2C;
+            font-size: 14px;
+        }
+    }
+
+    }
+    .circle {
+        height: calc(100vh + -235px);
+        img{
+            position: relative;
+            margin: auto;
+            display: block;
+            left: 0;
+            right: 0;
+            bottom: 171px;
+            max-width: 100%;
+        }
+    }
+    .estrategia .info-beta p.bestof {
+        color: #978F72!important;
+        font-size: 18px!important;
+        letter-spacing: 1.3px;
+        font-family: 'metropolisbold';
+    }
+    @media (max-width: 768px) { 
+    .circle {
+        img{
+            bottom: 131px;
+        }
+    }
+    .estrategia{
+       
+        background-size: contain;
+        background-attachment: initial;
+        background-position: top center;
+    }
+    }

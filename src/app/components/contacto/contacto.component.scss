@@ -1,0 +1,64 @@
+.contacto{
+    background-image: url(/assets/bg_contacto@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    height: calc(100vh + -65px);
+    background-attachment: fixed;
+    background-position: center;
+    form{
+        padding: 1rem 2rem;
+    }
+    .formcontact {
+        margin: auto;
+        p{
+            color: #fff;
+        }
+    }
+    .form-control {
+        color: #404041;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #404041;
+    }
+    ::placeholder{
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    .btn-enviar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        align-items: flex-end;
+        .btn{
+            background: #404041;
+            color: #978F72;
+            border: 0;
+            width: 150px;
+        }
+    }
+    .cflex {
+        display: flex;
+        align-items: center;
+}
+.dbord{
+    border: 1px solid #978F72;
+}
+}
+img.icontact {
+    display: flex;
+    margin: 1rem auto 0;
+    width:60px;
+    max-width: 100%;
+
+}
+
+@media (max-width: 768px)  { 
+    .masthead.contacto {
+        padding-top: calc(1rem + 74px);
+        height: calc(100vh + 230px);
+    }
+}
